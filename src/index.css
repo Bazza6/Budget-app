@@ -1,0 +1,65 @@
+.izquierda {
+  width: 100%;
+}
+
+.listaPresupuesto {
+  font-size: 0.7rem;
+}
+
+.derecha {
+  width: 100%;
+}
+
+.inputButton {
+  background-color: orange;
+  border: none;
+}
+
+.containerInfo {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  height: 100%;
+  width: 100%;
+  background: rgba(133, 133, 133, 0.8);
+}
+
+.input {
+  display: inline-block;
+}
+
+.inputInput {
+  width: 30px;
+  width: 180px;
+}
+
+.infoPopUp {
+  border: green 2px solid;
+  background-color: white;
+  position: absolute;
+  left: 50px;
+  top: 250px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+}
