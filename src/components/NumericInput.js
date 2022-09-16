@@ -1,12 +1,10 @@
-import '../App.css';
-
 function NumericInput(props) { //esto gestiona el panel con numero paginas y numero idiomas
 
     // las funciones mas y menos suman o restan numero paginas y numero idiomas
     function mas(event) {
         let { value, name } = event.target;
         value = Number(value);
-        props.setOption(prev => {
+        props.setBudget(prev => {
             return {
                 ...prev,
                 [name]: value + 1
@@ -18,7 +16,7 @@ function NumericInput(props) { //esto gestiona el panel con numero paginas y num
         let { value, name } = event.target;
         value = Number(value);
         if (value > 0) {
-            props.setOption(prev => {
+            props.setBudget(prev => {
                 return {
                     ...prev,
                     [name]: value - 1

@@ -1,32 +1,3 @@
-function SortLista(props) {
-
-    function orderAlphabetic() {
-        props.changeOrder("alphabetic");
-    }
-
-    function orderFecha() {
-        props.changeOrder("fecha");
-    }
-
-    function orderReset() {
-        props.changeOrder("original")
-    }
-
-    function handleSearch(e) {
-        props.setText(e.target.value);
-    }
-
-    return (
-        <>
-            <button onClick={orderAlphabetic}>ordenar alphabeticamente</button>
-            <button onClick={orderFecha}>ordenar fecha (ultimo primero)</button>
-            <button onClick={orderReset}>reset orden</button>
-
-            <input type="text" value={props.text} onChange={handleSearch} placeholder="search..." />
-        </>
-    )
-}
-
 // Lista se ocupa de renderizar lo que le pasamos
 function Lista(props) {
 
@@ -83,28 +54,4 @@ function Lista(props) {
     )
 }
 
-export { Lista, SortLista };
-
-/*             displayLista = arrayPressupost.map(pressupost => {
-                let date = `${pressupost.fecha.getDate()}/${pressupost.fecha.getMonth() + 1}/${pressupost.fecha.getFullYear()} ${pressupost.fecha.getHours()}:${pressupost.fecha.getMinutes()}:${pressupost.fecha.getSeconds()}`;
-                return (
- 
-                    <div className="listaPresupuesto">
-                        <p> <br />
-                            Presupuesto <b>{pressupost.nombrePresupuesto}</b><br />
-                            fecha: {date} <br />
-                            Usuario: {pressupost.nombreUsuario}<br />
- 
-                            {pressupost.web ? <>Pagina web: sí</> : <>Pagina web: no</>} <br />
-                            {pressupost.web && <>&nbsp;&nbsp;&nbsp;numero paginas:  {pressupost.numPag}<br /></>}
-                            {pressupost.web && <>&nbsp;&nbsp;&nbsp;numero idiomas:  {pressupost.numIdiomas}<br /></>}
- 
-                            {pressupost.seo ? <>Consltoria SEO: sí</> : <>Consltoria SEO: no</>}<br />
-                            {pressupost.ads ? <>Google ADS: sí</> : <>Google ADS: no</>}<br />
- 
-                            Precio total: {pressupost.preu}€<br />
-                        </p>
-                        <hr />
-                    </div>
-                )
-            }) */
+export { Lista };

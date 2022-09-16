@@ -5,7 +5,7 @@ function Wellcome() {
         <>
             <h1>Wellcome!</h1>
 
-            <Link to="/home">Empezamos el jeugo!</Link>
+            <Link to="/home">Empezamos!</Link>
         </>
     )
 }

@@ -1,3 +1,15 @@
+.inline {
+  display: inline;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.inline:focus {
+  border: solid red 2px;
+}
+
 .izquierda {
   width: 100%;
 }
@@ -62,4 +74,11 @@ code {
 .container {
   padding: 15px;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
